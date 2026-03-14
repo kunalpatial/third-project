@@ -1,0 +1,31 @@
+#product{
+    display: flex;
+     flex-wrap: wrap;
+      gap: 1.7rem;
+     
+      
+}
+#pro{
+    padding: 1rem;
+    border: none;
+     width: 33vh;
+     background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    .adcart{
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        background-color:  #e5242a;
+        color: azure;
+        border: none;
+        padding: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+      
+
+    }
+}
+#allproduct{
+    text-decoration: none;
+    color: aliceblue;
+}

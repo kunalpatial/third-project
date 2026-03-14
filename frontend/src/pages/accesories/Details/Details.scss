@@ -1,0 +1,96 @@
+.details-container{
+display:flex;
+gap:40px;
+padding:40px;
+max-width:1200px;
+margin:auto;
+align-items:center;
+}
+
+/* IMAGE */
+
+.details-image img{
+width:100%;
+max-width:500px;
+border-radius:10px;
+}
+
+/* INFO */
+
+.details-info{
+flex:1;
+}
+
+.details-info h1{
+margin-bottom:20px;
+}
+
+.price{
+font-size:24px;
+font-weight:bold;
+color:#e5242a;
+margin-bottom:15px;
+}
+
+.desc{
+margin-bottom:20px;
+opacity:0.8;
+line-height:1.6;
+}
+
+.buy-btn{
+background:#e5242a;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+}
+
+.buy-btn:hover{
+background:#c61c22;
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+.details-container{
+gap:20px;
+padding:30px;
+}
+
+.details-image img{
+max-width:400px;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.details-container{
+flex-direction:column;
+text-align:center;
+}
+
+.details-image img{
+max-width:100%;
+}
+
+}
+
+
+@media(max-width:480px){
+
+.details-container{
+padding:20px;
+}
+
+.price{
+font-size:20px;
+}
+
+}

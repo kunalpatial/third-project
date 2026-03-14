@@ -1,0 +1,194 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  @media (max-width: 992px) {
+    height: 80vh;
+  }
+
+  @media (max-width: 576px) {
+    height: 70vh;
+  }
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content-vid {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 40%;
+
+  h1 {
+    font-size: 5.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 3);
+
+    @media (max-width: 992px) {
+      font-size: 3.5rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+
+    @media (max-width: 992px) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .arrow {
+    width: 4rem;
+    height: 4rem;
+    border-left: 4px solid #f5c400;
+    border-bottom: 4px solid #f5c400;
+    transform: rotate(-45deg);
+    margin: 20px auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    @media (max-width: 576px) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  .arrow:hover {
+    transform: rotate(-45deg) translateY(5px);
+  }
+}
+
+#laptoplist {
+  background-color: #1e1f24;
+  padding: 3rem;
+}
+
+#laptop {
+
+  img {
+    height: 10rem;
+    
+
+  }
+
+}
+
+
+.section1 {
+  background-image: url("../../assets/financing-12-months.jpg"); 
+  background-size: cover;   
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;            
+  display: flex;
+  align-items: center;   
+  padding-left: 50px;      
+  color: white;             
+  
+}
+
+
+.pic-text {
+
+  z-index: 1; 
+  max-width: 600px;
+
+  
+}
+
+.pic-text h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pic-text p {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+
+.pic-text button {
+  background:#e5242a;       
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pic-text button:hover {
+  background: #961317;
+}
+#section3-background{
+  background-color: white;
+  
+}
+#section3{
+  color: black;
+  margin: 3rem;
+
+  img{
+    width: 6rem;
+  }
+  ul{
+    text-align: start;
+  }
+  button{
+     outline: none;
+     border: none;
+     padding: 0.7rem;
+     background-color: #e5242a;
+     color: white;
+  }
+}
+#section4{
+  background: url(../../assets/main-bg.jpg);
+    background-size: cover;   
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh; 
+  display: flex;
+    justify-content:end;  
+  #text4{
+    margin: 2rem;
+    text-align: center;
+    img{
+      width: 10rem;
+    }
+      button{
+     outline: none;
+     border: none;
+     padding: 0.7rem;
+     background-color: #e5242a;
+     color: white;
+  }
+    
+  }         
+}
+#lastsection{
+  padding: 3rem;
+  h3{
+    color: #1e1f24;
+    font-weight: 700;
+  }
+  background-color: white;
+}

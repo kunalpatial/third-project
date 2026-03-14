@@ -1,0 +1,103 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Elgato Game ",
+      "price": 1999,
+      "category": "Capture Card",
+      "stock": 10,
+      "description": "High-quality game capture device for streaming and recording gameplay.",
+      "img": "/images/product1.jpg"
+        
+    },
+    {
+      "id": 2,
+      "title": "Cam Link 4K",
+      "price": 1999,
+      "category": "Capture Card",
+      "stock": 10,
+      "description": "High-quality game capture device for streaming and recording gameplay.",
+      "img": "/images/product2.webp"
+    },
+    {
+      "id": 3,
+      "title": "Elgato HD60 X",
+      "price": 1999,
+      "category": "Capture Card",
+      "stock": 10,
+      "description": "High-quality game capture device for streaming and recording gameplay.",
+      "img": "/images/product3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Elgato 4K X",
+      "price": 1999,
+      "category": "Capture Card",
+      "stock": 10,
+      "description": "High-quality game capture device for streaming and recording gameplay.",
+      "img": "/images/product4.avif"
+    }  
+    
+  ],
+  "mouse":[
+    {
+      "id": 101,
+      "title": "Corsair Dual-Arm Stand ",
+      "price": 1999,
+       "category": "display",
+      "stock": 10,
+      "description": "High-quality game capture device for streaming and recording gameplay.",
+      "img": "/images/product5.avif"
+        
+    },
+    {
+      "id":102,
+      "title": "ORIGIN PC Mouse Pad",
+      "price": 1999,
+       "category": "display",
+      "stock": 10,
+      "description": "High-quality game capture device for streaming and recording gameplay.",
+      "img": "/images/product6.jpeg"
+    },
+    {
+      "id": 103,
+      "title": "CORSAIR Liquid Red",
+      "price": 1999,
+       "category": "display",
+      "stock": 10,
+      "description": "High-quality game capture device for streaming and recording gameplay.",
+      "img": "/images/product7.jpeg"
+    },
+    {
+      "id": 104,
+      "title": "ORIGIN PC Mouse Pad",
+      "price": 1999,
+       "category": "display",
+      "stock": 10,
+      "description": "High-quality game capture device for streaming and recording gameplay.",
+      "img": "/images/product4.avif"
+    },
+     {
+      "id": 105,
+      "title": "Elgato 4K X",
+      "price": 1999,
+       "category": "display",
+      "stock": 10,
+      "description": "High-quality game capture device for streaming and recording gameplay.",
+      "img": "/images/product4.avif"
+    },
+    {
+      "id": 106,
+      "title": "Elgato 4K X",
+      "price": 1999,
+       "category": "display",
+      "stock": 10,
+      "description": "High-quality game capture device for streaming and recording gameplay.",
+      "img": "/images/product4.avif"
+    }
+   
+
+  ]
+
+
+}
