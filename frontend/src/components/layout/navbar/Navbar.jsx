@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import "./Navbar.scss"
 import { NavLink } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import logo from "../../../assets/origin-logo.svg";
 
 const Navbar = () => {
   const cartCount = useSelector((state) => state.cart.cart.length);
@@ -44,7 +45,8 @@ const Navbar = () => {
         <div className="content">
           <div className="logo">
             <NavLink to="Origin" className="NavLink">
-              <img src="./src/assets/origin-logo.svg" alt="" />
+              <img src={logo} alt="logo" />
+              
             </NavLink>
           </div>
           <ul className="list-unstyled d-none d-xxl-flex">
