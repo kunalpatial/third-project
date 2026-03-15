@@ -35,7 +35,7 @@ const Cart = () => {
                 src={
                   item.img.startsWith("http")
                     ? item.img
-                    : `http://localhost:7000${item.img}`
+                    : `https://third-project-6s9s.onrender.com${item.img}`
                 }
                 alt={item.title}
                 style={{ width: "80px", height: "80px", objectFit: "cover", marginRight: "15px" }}

@@ -3,15 +3,26 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Details.scss";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../Cart/Cartslice";
+import { toast } from "react-toastify";
 
 const Details = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
+    const dispatch = useDispatch();
+  
+
+  const handleAddToCart = (item) => {
+    dispatch(addToCart(item));
+    toast.success(`${item.title} added to cart`);
+  };
+
 
   useEffect(() => {
     axios
-      .get(`http://localhost:7000/products/${id}`)
+      .get(`https://third-project-6s9s.onrender.com/products/${id}`)
       .then((res) => {
         setProduct(res.data);
         setLoading(false);
@@ -33,7 +44,7 @@ const Details = () => {
           src={
             product.img?.startsWith("http")
               ? product.img
-              : `http://localhost:7000${product.img}`
+              : `https://third-project-6s9s.onrender.com${product.img}`
           }
           alt={product.title}
         />
@@ -49,7 +60,12 @@ const Details = () => {
         <p><strong>Category:</strong> {product.category}</p>
         <p><strong>Stock:</strong> {product.stock}</p>
 
-        <button className="buy-btn">Add to Cart</button>
+         <button
+          className="buy-btn"
+          onClick={() => handleAddToCart(product)}
+        >
+          Add to Cart
+        </button>
       </div>
 
     </div>

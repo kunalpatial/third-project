@@ -13,7 +13,7 @@ const Display = () => {
 
 
   useEffect(() => {
-    axios.get("http://localhost:7000/mouse")
+    axios.get("https://third-project-6s9s.onrender.com/mouse")
       .then(res => setmouse(res.data))
       .catch(err => console.error(err));
   }, []);
@@ -34,7 +34,7 @@ const Display = () => {
               src={
                 item.img?.startsWith("http")
                   ? item.img
-                  : `http://localhost:7000${item.img}`
+                  : `https://third-project-6s9s.onrender.com${item.img}`
               }
               alt={item.title}
               style={{ width: "100%" }}

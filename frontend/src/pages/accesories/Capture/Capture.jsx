@@ -14,7 +14,7 @@ const Products = () => {
 
 
   useEffect(() => {
-    axios.get("http://localhost:7000/products")
+    axios.get("https://third-project-6s9s.onrender.com/products")
       .then(res => setProducts(res.data))
       .catch(err => console.error(err));
   }, []);
@@ -37,7 +37,7 @@ const Products = () => {
                 src={
                   p.img.startsWith("http")
                     ? p.img
-                    : `http://localhost:7000${p.img}`
+                    : `https://third-project-6s9s.onrender.com${p.img}`
                 }
                 alt={p.title}
                 style={{ width: "100%" }}
